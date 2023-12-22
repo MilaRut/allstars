@@ -1,0 +1,3549 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CPA Club Forum">
+  <title>CPA Club Connect</title>
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- BRANDING -->
+
+    <a href="#" id="branding-container" class="branding" style="display: none;">
+      <img src="./img/branding-bg.png" srcset="./img/branding-bg@2x.png 2x" alt="">
+    </a>
+
+    <!-- END BRANDING -->
+
+    <div id="top-container"></div>
+    <div id="branding-container-top" class="branding" style="display: none;"></div>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo-wrapper">
+          <div class="header__logo header-hover">
+            <a href="welcome.html">
+              <img src="./img/svg/cpa-logo.svg" width="190" height="29" alt="CPA Club logo.">
+            </a>
+            <button type="button" class="header__logo-btn-mob">
+              <img src="./img/svg/cpa-logo.svg" width="190" height="29" alt="CPA Club logo."></button>
+            <span>На главную сайта</span>
+            <div class="header__mobile-links">
+              <a href="index.html">← На главную форума</a>
+              <a href="welcome.html">← На главную сайта</a>
+            </div>
+          </div>
+          <div class="header__divider"></div>
+          <div class="header__forum-link header-hover">
+            <a href="#">
+              <img class="forum-img-ru" src="./img/svg/header-forum-ru.svg" width="114" height="26"
+                alt="CPA Club Forum.">
+              <img class="forum-img-en" src="./img/svg/header-forum-en.svg" width="114" height="26"
+                alt="CPA Club Forum.">
+            </a>
+            <span>На главную форума</span>
+          </div>
+          <span>×</span>
+          <div class="header__partner-logo">
+            <a href="#">
+              <img src="./img/partner-logo.png" srcset="./img/partner-logo@2x.png 2x" width="90" height="25"
+                alt="CPA Club logo.">
+            </a>
+          </div>
+        </div>
+
+        <div class="header__search search">
+          <form action="" method="get" id="header-search-form">
+            <input name="search" placeholder="Поиск по сайту" type="search">
+            <button class="search__btn" type="submit">
+              <svg width="20" height="20" fill="currentColor">
+                <use xlink:href="./img/sprite.svg#search-btn"></use>
+              </svg>
+            </button>
+          </form>
+
+          <!-- add class 'active' to show the list below -->
+          <div class="search__results">
+            <ul class="search__results-list list-reset">
+              <li class="search__results-item">
+                <h3>Результаты поиска • <span class="search__results-count">3</span></h3>
+              </li>
+              <li class="search__results-item">
+                <a href="" class="search__results-link">Single line item</a>
+              </li>
+              <li class="search__results-item">
+                <a href="" class="search__results-link">Single line item</a>
+              </li>
+              <li class="search__results-item">
+                <a href="" class="search__results-link">Single line item</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="header__user-menu user-menu">
+          <div class="user-menu__lang-switcher">
+            <div class="user-menu__lang-switcher-wrapper">
+              <a class="user-menu__lang-link active" href="#">RU</a>
+              <a class="user-menu__lang-link" href="#">UA</a>
+              <a class="user-menu__lang-link" href="#">UK</a>
+            </div>
+          </div>
+          <div class="user-menu__unlogged">
+            <button type="button" class="user-menu__btn user-menu__btn--login open-popup login-btn"
+              data-value="#login">Вход</button>
+            <button type="button" class="user-menu__btn user-menu__btn--signup open-popup signup-btn"
+              data-value="#signup">Регистрация</button>
+          </div>
+          <div class="user-menu__logged active">
+            <div class="user-menu__alerts">
+              <button class="user-menu__alerts-btn" type="button">
+                <svg class="user-menu__alerts-btn-icon" width="16" height="20" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#bell"></use>
+                </svg>
+                <span class="user-menu__alerts-icon"></span>
+              </button>
+              <ul class="user-menu__alerts-list list-reset">
+                <li class="user-menu__alerts-item">
+                  <h3>Уведомления</h3>
+                </li>
+                <li class="user-menu__alerts-item active">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 1</a>
+                </li>
+                <li class="user-menu__alerts-item active">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 2</a>
+                </li>
+                <li class="user-menu__alerts-item">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 3</a>
+                </li>
+                <li class="user-menu__alerts-item">
+                  <a class="user-menu__alerts-link" href="#">Уведомление 4</a>
+                </li>
+              </ul>
+            </div>
+            <div class="user-menu__user-block">
+              <div class="user-menu__avatar">
+                <a href="user-profile.html">
+                  <img src="./img/avatar.png" loading="lazy" width="30" height="30" alt="User avatar.">
+                </a>
+              </div>
+              <div class="user-menu__user-name">
+                <p>Владислав Минайчев</p>
+              </div>
+            </div>
+            <button class="user-menu__logout-btn logout-btn" type="button">
+              <svg width="24" height="24" fill="currentColor">
+                <use xlink:href="./img/sprite.svg#logout"></use>
+              </svg>
+              <span>Выход</span>
+            </button>
+          </div>
+          <button type="button" class="user-menu__nav-btn" aria-label="Открыть меню."></button>
+          <nav class="header__nav header-nav">
+            <div class="header-nav__content">
+              <ul class="header-nav__list list-reset">
+                <li class="header-nav__item header-nav__item--forum">
+                  <a class="header-nav__link" href="index.html">
+                    <h3>Форум</h3>
+                    <p>Классический форум для общения топов рынка</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--catalog">
+                  <a class="header-nav__link" href="catalog.html">
+                    <h3>Компании</h3>
+                    <p>Рейтинг компаний в отрасли</p>
+                  </a>
+                </li>
+                <!-- <li class="header-nav__item header-nav__item--courses">
+                  <a class="header-nav__link" href="courses.html">
+                    <h3>Курсы</h3>
+                    <p>Обучающие материалы для будущих профессионалов IT</p>
+                  </a>
+                </li> -->
+                <li class="header-nav__item header-nav__item--events">
+                  <a class="header-nav__link" href="events.html">
+                    <h3>Мероприятия</h3>
+                    <p>Информация о формате, программе, спикерах, шоу</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--blog">
+                  <a class="header-nav__link" href="blog.html">
+                    <h3>Блог</h3>
+                    <p>Последние новости, кейсы и тенденции</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--divider">
+                  <div></div>
+                </li>
+                <li class="header-nav__item header-nav__item--allstars">
+                  <a class="header-nav__link" href="allstars.html">
+                    <h3>
+                      <span class="header-nav__heading">AllStars</span>
+                      <span class="header-nav__heading--wc">AllStars</span>
+                    </h3>
+                    <p>Арбитражная доска славы</p>
+                  </a>
+                </li>
+                <li class="header-nav__item header-nav__item--allies">
+                  <a class="header-nav__link" href="allies.html">
+                    <h3>Allies</h3>
+                    <p>Почётный раздел партнёров Клуба</p>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="adblock adblock-220x320">
+                <iframe width="220" height="320" src="./img/banner-menu-295х430.png" frameborder="0"></iframe>
+                <!-- <a href="#" class="adblock__link">
+                    <img src="" width="220" height="320" alt="">
+                  </a> -->
+              </div>
+
+              <div class="adblock adblock-290x76">
+                <iframe width="290" height="76" src="./img/banner-290x76.png" frameborder="0"></iframe>
+                <!-- <a href="#" class="adblock__link">
+                  <img src="" width="290" height="76" alt="">
+                </a> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main-block">
+      <div class="container">
+        <div class="main-content allstars">
+          <div class="allstars__description">
+            <h2>Club Allstars</h2>
+            <p>CPA.AllStars&nbsp;&mdash; арбитражная доска славы и&nbsp;нетворкинг-каталог для специалистов нашей сферы
+              по&nbsp;версии
+              CPA.Club. В&nbsp;данную рубрику попадают самые именитые профессионалы индустрии за&nbsp;всю историю Клуба
+              и
+              CPA-маркетинга.</p>
+            <p>Здесь не&nbsp;только ТОПы Клуба, но&nbsp;вообще все, кто внёс существенный вклад в&nbsp;развитие сферы
+              так или иначе.
+              Работники компаний и&nbsp;новички сферы могут использовать каталог AllStars для формирования первого
+              понимания
+              о&nbsp;людях в&nbsp;индустрии, например, перед выездом на&nbsp;конференцию.</p>
+            <p class="bordered">Каталог наполняется последовательно. За&nbsp;раз мы&nbsp;добавляем не&nbsp;больше чем
+              9&nbsp;&laquo;звёзд&raquo; в&nbsp;случайном порядке. Мы&nbsp;хотим знакомить вас и&nbsp;с&nbsp;восходящими
+              звёздами, а&nbsp;не&nbsp;только с&nbsp;теми, кого и&nbsp;так знает весь рынок.</p>
+          </div>
+          <div class="allstars__cards">
+            <ul class="allstars__cards-list list-reset">
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-kayumov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-cpa.svg" width="40" height="23" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-kma.svg" width="35" height="39" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-forbes.svg" width="51" height="13" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Евгений Каюмов</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>В арбитраже с 14 лет</li>
+                            <li class='allstars__inner-item'>Co-Founder&#42889; RGK/KMA/SOAX</li>
+                            <li class='allstars__inner-item'>Основатель CPA.Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Первый бизнес сделал на грибах у&nbsp;обочины</li>
+                          <li class='allstars__inner-item'>Жил в соседнем доме от Л.Месси</li>
+                          <li class='allstars__inner-item'>Участник Forbes Councils с 2022 года</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-riddick.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-pinup.svg" width="44" height="44" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-jocker.svg" width="41" height="41" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-phone.svg" width="40" height="40" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Саша Риддик</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>CEO PIN-UP Traffic</li>
+                            <li class='allstars__inner-item'>В сфере affiliate-маркетинга с 2008 года</li>
+                            <li class='allstars__inner-item'>Открыл первое рекламное агентство в 18 лет</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Купил NFT за 50к USD</li>
+                          <li class='allstars__inner-item'>Победитель номинации &#34;Александр Риддик года&#34;</li>
+                          <li class='allstars__inner-item'>Обещал позвонить</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-voystrikov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-clicklead.svg" width="39" height="36" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-2011.svg" width="44" height="42" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-conf.svg" width="38" height="37" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Антон Войстриков</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>CEO & Owner ПП Clicklead</li>
+                            <li class='allstars__inner-item'>В сфере affiliate-маркетинга с 2011 года</li>
+                            <li class='allstars__inner-item'>Спикер почти всех CPA-конференций в СНГ</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Основал Clicklead в 2016 году</li>
+                          <li class='allstars__inner-item'>Знает все об iGaming-трафике</li>
+                          <li class='allstars__inner-item'>Бренд Clicklead не пропускает ни&nbsp;одной конференции</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/anton_voystrikov/" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/voystrikov" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-stolpovsky.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-offerwall.svg" width="41" height="41" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-corgi.svg" width="41" height="39" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-cigar.svg" width="41" height="41" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Евгений Столповский</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Более 20 лет в рекламном бизнесе</li>
+                            <li class='allstars__inner-item'>В CPA c 2010 года</li>
+                            <li class='allstars__inner-item'>Владеет и руководит UAC-агентством OfferWall</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Инвестирует в арбитражные команды</li>
+                          <li class='allstars__inner-item'>Специализируется на iGaming и UAC</li>
+                          <li class='allstars__inner-item'> Обожает шутки ниже пояса, сигары и свою собаку Мег</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-gagarin.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-gpartners.svg" width="41" height="28" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-ace.svg" width="25" height="34" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-mic.svg" width="34" height="34" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Инна Гагарин</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>12+ лет в iGaming, 8 из которых в&nbsp;CPA</li>
+                            <li class='allstars__inner-item'>Основатель коовнер G.Partners и&nbsp;Gagarin Arbitrage Team
+                            </li>
+                            <li class='allstars__inner-item'>“Инфлюенсер года” '21 по версии KinzaAwards</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Лицо обложки журнала Sigma Americas в Бразилии</li>
+                          <li class='allstars__inner-item'>Была прессекретарём пив.завода</li>
+                          <li class='allstars__inner-item'>Фанат &#34;Гарри Поттера&#34; и всего, что с&nbsp;ним связано
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-lopan.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-ads.svg" width="29" height="43" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-android.svg" width="32" height="38" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-seo.svg" width="34" height="34" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Александр Lopan</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Google UAC</li>
+                            <li class='allstars__inner-item'>ASO-traffic</li>
+                            <li class='allstars__inner-item'>Gambling & Betting траф</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Льёт органику со сторов</li>
+                          <li class='allstars__inner-item'>Специализируется на Google UAC и&nbsp;In-App трафе</li>
+                          <li class='allstars__inner-item'>В теме более 10 лет</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-ivanov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-mobile.svg" width="42" height="42" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-youtube.svg" width="40" height="40" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-star.svg" width="42" height="42" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Евгений Иванов</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Совладелец и сооснователь Wap.Click</li>
+                            <li class='allstars__inner-item'>Ведёт самое резонансное шоу на&nbsp;affiliate рынке</li>
+                            <li class='allstars__inner-item'>Знаком со всеми олдами, известен всем новичкам</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Автор книги &#35;яТОПтыЛОХ</li>
+                          <li class='allstars__inner-item'>Сделал больше всех на affiliate рынке видеоконтента</li>
+                          <li class='allstars__inner-item'>Всегда рядом</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-karpach.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-squash.svg" width="37" height="37" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-card.svg" width="45" height="45" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-bath.svg" width="36" height="36" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Михан Карпач</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Сооснователь shakes.pro</li>
+                            <li class='allstars__inner-item'>Главный банщик CPA-индустрии </li>
+                            <li class='allstars__inner-item'>Управляет сервисом YeezyPay.io</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Специалист по &#34;перекрышке&#34;</li>
+                          <li class='allstars__inner-item'>Обнял всех братиков на рынке</li>
+                          <li class='allstars__inner-item'>Фанат игры в сквош</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-korepov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-partnerkin.svg" width="32" height="34" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-mac.svg" width="49" height="24" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-2005.svg" width="43" height="42" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Вадим Корепов</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Основатель Partnerkin.com</li>
+                            <li class='allstars__inner-item'>Организатор MAC</li>
+                            <li class='allstars__inner-item'>В трафике с 2005 года</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Посетил 82 страны</li>
+                          <li class='allstars__inner-item'>Любит футбол, теннис и активный спорт</li>
+                          <li class='allstars__inner-item'>Основатель первого CPA-коливинга</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/coreps.ru" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/koreps" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-karpach-e.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-olymptrade.svg" width="39" height="40" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-kingfin.svg" width="34" height="45" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-bitcoin.svg" width="28" height="38" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Евгений Карпач</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Создатель партнерских программ</li>
+                            <li class='allstars__inner-item'>Профессиональный Head of Affiliate в различных вертикалях
+                            </li>
+                            <li class='allstars__inner-item'>Более 20 лет в индустрии</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Ветеран и супермодератор searchengines.guru</li>
+                          <li class='allstars__inner-item'>Раньше всех братиков ворвался в&nbsp;крипту</li>
+                          <li class='allstars__inner-item'>Участник Клуба с 2013</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/evgeniykarpach" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/evgenspb" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-moreva.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-pinup.svg" width="43" height="43" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-coo.svg" width="45" height="29" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-affbank.svg" width="42" height="41" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Ульяна Морева</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>COO PIN-UP Global</li>
+                            <li class='allstars__inner-item'>Первый руководитель AffBank</li>
+                            <li class='allstars__inner-item'>В прошлом CEO CPA.Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>7 лет назад училась у Кравченко</li>
+                          <li class='allstars__inner-item'>Вышла замуж за арбитражника</li>
+                          <li class='allstars__inner-item'>Ничего не знает про &quot;Я-Рядом!&quot;</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/ulyashkin_moryashkin" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/ulylyly" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-manuilov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-alfaleads.svg" width="39" height="34" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-drums.svg" width="38" height="35" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-sphynx.svg" width="39" height="42" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Роман Мануйлов</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>CEO Alfaleads &amp; Advisability</li>
+                            <li class='allstars__inner-item'>Эксперт в iGaming-вертикали и&nbsp;главных трендах CPA</li>
+                            <li class='allstars__inner-item'>В сфере маркетинга с 2012 года, спикер более чем на 30
+                              конференциях</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Мастер над пословицами</li>
+                          <li class='allstars__inner-item'>За ЗОЖ, джин и лысых кошек</li>
+                          <li class='allstars__inner-item'>Организовал более 20 ивентов в&nbsp;CPA</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/uhovert" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/uhovert" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-ivakin.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-mobile2.svg" width="22" height="44" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-dating.svg" width="40" height="40" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-cpa.svg" width="40" height="23" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Игорь Ивакин</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>DCB(WapClick) решения на СНГ</li>
+                            <li class='allstars__inner-item'>8 раз пробовал запустить Dating-сервис</li>
+                            <li class='allstars__inner-item'>Дважды начинал с &laquo;нуля&raquo; или даже
+                              &laquo;минуса&raquo;</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Дебютировал в 18 лет с успешным affiliate решением</li>
+                          <li class='allstars__inner-item'>Владелец рекламной сети с&nbsp;&rsaquo;20кк/daily по PreRoll
+                            СНГ
+                          </li>
+                          <li class='allstars__inner-item'>Любит походы и сапбординг</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/igoreshka" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/JBigoreshka" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-kuzmicheva.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-bro.svg" width="46" height="14" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-ea.svg" width="35" height="27" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-pressaff.svg" width="46" height="32" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Ника Кузьмичёва</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Owner Cpa Bro</li>
+                            <li class='allstars__inner-item'>Owner Enchant Affiliates</li>
+                            <li class='allstars__inner-item'>Founder PressAff Media</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Cлабость - это любовь к Животным и их спасение</li>
+                          <li class='allstars__inner-item'>Мечта&#58; открыть приют для собак &#58;&#41;</li>
+                          <li class='allstars__inner-item'>Обожает эффектные образы</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/nusyalove" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/Nika_CpaBro" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-ovchinnikov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-lp.svg" width="30" height="42" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-nba.svg" width="19" height="46" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-dumbbell.svg" width="39" height="30" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Евгений Овчинников</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Основатель LuxeProfit</li>
+                            <li class='allstars__inner-item'>Общий стаж в трафике 20+ лет</li>
+                            <li class='allstars__inner-item'>ТОП во многих нутра-ПП</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Главный баскетболист CPA-индустрии</li>
+                          <li class='allstars__inner-item'>Адепт ЗОЖ и фанат спорта</li>
+                          <li class='allstars__inner-item'>Чаще других упоминает слово &quot;штанга&quot;</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/mltconsole" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/consolik" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-kustov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-tc.svg" width="40" height="22" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-pencil.svg" width="34" height="34" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-dumbbell.svg" width="39" height="30" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Никита Кустов</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>CEO &#64;trafficcardinal</li>
+                            <li class='allstars__inner-item'>Head of marketing всея Руси</li>
+                            <li class='allstars__inner-item'>Основатель канала &#64;smartcopywriting</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Любит спорт и котиков</li>
+                          <li class='allstars__inner-item'>Фанат писателя Владимира Сорокина</li>
+                          <li class='allstars__inner-item'>Жмёт от груди больше, чем ты</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/nickkustov" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/NickKustov" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-bushman.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-hedgehog.svg" width="45" height="43" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-wrench.svg" width="39" height="39" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-toque.svg" width="39" height="39" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Ваня Бушман</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Founder Hedgehog Tech</li>
+                            <li class='allstars__inner-item'>ASO и AppDev с 2017</li>
+                            <li class='allstars__inner-item'>Заслужженный affiliate-технарь Клуба</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Фуд блогер со стажем</li>
+                          <li class='allstars__inner-item'>Лепит пельмени, а не льёт в&nbsp;пельменную</li>
+                          <li class='allstars__inner-item'>По звуку баллона определяет остаток веселья</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/mr.ejig/" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/sovejig" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-strizh.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-seo.svg" width="35" height="35" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-bl.svg" width="43" height="43" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-shovel.svg" width="57" height="57" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Саша Cтриж</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Занимается SEO более 10 лет</li>
+                            <li class='allstars__inner-item'>Создатель iGaming affiliate сообщества</li>
+                            <li class='allstars__inner-item'>Ведёт чёрный список ПП</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Копает драгоценности и артефакты</li>
+                          <li class='allstars__inner-item'>Фотографирует Луну</li>
+                          <li class='allstars__inner-item'>Имеет смысл жизни и верит в него</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a>
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/STRIJs" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-prokofiev.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-casino.svg" width="39" height="39" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-gamblingpro.svg" width="30" height="38" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-ai.svg" width="36" height="36" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Артём Прокофьев</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Поставщик ПО для игорного бизнеса</li>
+                            <li class='allstars__inner-item'>Основатель Gambling.pro</li>
+                            <li class='allstars__inner-item'>Создатель сервиса ORDINEC</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Веду блог про ИИ в инстаграм @prokofev_artem</li>
+                          <li class='allstars__inner-item'>Разрабатываем решения на базе ИИ для широкого спектра задач
+                          </li>
+                          <li class='allstars__inner-item'>Овнер топ арбитражной команды</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/prokofev_artem" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/ordinec" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-smolyaninov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-fb-ads.svg" width="29" height="42" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-ads.svg" width="30" height="38" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-medicine.svg" width="27" height="34" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Артём Смолянинов</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>В сфере с 2017 года</li>
+                            <li class='allstars__inner-item'>Самый крупный авторский паблик VK по арбитражу Facebook
+                            </li>
+                            <li class='allstars__inner-item'>Владелец арбитражной команды «SYRUP»</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Разоблачил &laquo;миньона-крысу&raquo;</li>
+                          <li class='allstars__inner-item'>Сделал платную обучалку в&nbsp;2015 году</li>
+                          <li class='allstars__inner-item'>Пересобирал команду 4 раза</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/artsmolyaninov" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/artsmolyaninov" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-baikov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-spartak.svg" width="53" height="37" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-dumbbell.svg" width="38" height="30" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-mic.svg" width="26" height="33" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Наиль Байков</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Сооснователь SEO-pult.tv</li>
+                            <li class='allstars__inner-item'>16 лет в индустрии интернет рекламы</li>
+                            <li class='allstars__inner-item'>Провел более 100 митапов и&nbsp;конференций</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Ведущий affiliate-ивентов, телеведущий, бизнес-тренер</li>
+                          <li class='allstars__inner-item'>Старший Капитан по интернет-маркетингу</li>
+                          <li class='allstars__inner-item'>За спорт/ЗОЖ и ФК «Спартак Москва»</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/NailBaikov" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/nailbaikov" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-dubovoy.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-cpa.svg" width="39" height="22" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-uac.svg" width="29" height="43" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-seo.svg" width="34" height="34" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Mikhail Dubovoy</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>В affiliate сфере с 2010 года</li>
+                            <li class='allstars__inner-item'>Был в ТОПе нескольких ПП в&nbsp;вертикали Gambling</li>
+                            <li class='allstars__inner-item'>Руководит новым CPA.Club</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Резидент CPA.Club с 2017 года</li>
+                          <li class='allstars__inner-item'>Частый гость на affiliate-мероприятиях</li>
+                          <li class='allstars__inner-item'>В сомнительных схемах замечен не&nbsp;был, репутация 10/10
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/mixailvlg" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/mixxxail111" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-hitrov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-bitcoin.svg" width="30" height="41" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-listinghelp.svg" width="35" height="42" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-jetscapital.svg" width="43" height="33" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Сергей Хитров</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Основатель Jets.Capital, Blockchain Life, Listing.help
+                            </li>
+                            <li class='allstars__inner-item'>Организовывал одну из первых конференций по CPA - CPALife
+                            </li>
+                            <li class='allstars__inner-item'>C 2007 в интернет-рекламе по 2018</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Начинал путь в интернет рекламе с&nbsp;буксов</li>
+                          <li class='allstars__inner-item'>В 14 лет продавал сим карты у&nbsp;метро</li>
+                          <li class='allstars__inner-item'>Неоднократно признан инфлюенсером года в СНГ в сфере крипты,
+                            а также вошёл в топ-30 самых влиятельных криптанов по&nbsp;версии журнала hackernoon</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/serkhitrov" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/serkhitrov" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-slobozhenko.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item" style="opacity: 0;"></li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-devils.svg" width="47" height="39" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item" style="opacity: 0;"></li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Александр Слобоженко</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Обладатель эксцентричной причёски</li>
+                            <li class='allstars__inner-item'>Управляет самой крупной iGaming-командой в UA</li>
+                            <li class='allstars__inner-item'>Падал с мотоцикла 14 раз</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Променял арбитраж на&nbsp;инстаблогинг</li>
+                          <li class='allstars__inner-item'>Главный герой ТГ-канала со&nbsp;сплетнями</li>
+                          <li class='allstars__inner-item'>Поджог McLaren, чтобы набрать &laquo;лайков&raquo;</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/alex_slobozhenko" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item active">
+                        <a href="https://t.me/alex_slobozhenko " target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-petrov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-book.svg" width="38" height="38" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-mic.svg" width="34" height="34" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-tree.svg" width="30" height="35" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Mikhail Petrov</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Owner Atlas agency</li>
+                            <li class='allstars__inner-item'>Автор первой книги про affiliate маркетинг "Traff"</li>
+                            <li class='allstars__inner-item'>С 2014 года в сфере</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Любитель караоке</li>
+                          <li class='allstars__inner-item'>Ex-руководитель CPA club</li>
+                          <li class='allstars__inner-item'>Любит отдыхать один в лесу</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a href="https://t.me/shulz0071" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-chekulaev.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-fbk.svg " width="35" height="35" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-youtube2.svg" width="43" height="43" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-influencer.svg" width="49" height="49" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Александр Чекулаев</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Владелец FB-killa</li>
+                            <li class='allstars__inner-item'>Блогер со 100'000 просмотров на&nbsp;YouTube за год</li>
+                            <li class='allstars__inner-item'>В affiliate с 2010 года</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>С микрофоном на каждой конфе</li>
+                          <li class='allstars__inner-item'>Улыбается и машет</li>
+                          <li class='allstars__inner-item'>Придумал мемов больше чем CPA.RIP</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://instagram.com/adtagonist" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a href="https://t.me/dakaktakta" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-dorvey.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-tg-ads.svg " width="34" height="43" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-fb-ads.svg" width="31" height="44" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-vk.svg" width="44" height="44" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Мария Дорвей</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>В affiliate сфере с 2016 года</li>
+                            <li class='allstars__inner-item'>Руководит собственным рекламным агентством</li>
+                            <li class='allstars__inner-item'>Эксперт в Telegram Ads</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Никогда не занималась дорвеями</li>
+                          <li class='allstars__inner-item'>Никогда не срывала сроков</li>
+                          <li class='allstars__inner-item'>Никогда не летала на самолете Риддика</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-sibirsky.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-doctor.svg" width="39" height="39" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-hat.svg" width="42" height="42" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-bed.svg" width="37" height="37" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Артём Сибирский</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Founder EmpireCPA</li>
+                            <li class='allstars__inner-item'>Продал постельного белья на&nbsp;миллиард</li>
+                            <li class='allstars__inner-item'>Специалист по&nbsp;инфобизу</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Создатель &ldquo;института арбитража&rdquo;</li>
+                          <li class='allstars__inner-item'>Лечит грыжи и&nbsp;протрузии</li>
+                          <li class='allstars__inner-item'>Дипломированный психолог</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/artemysibirsky" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a href="https://t.me/artemysibirsky" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-dzubenko.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item" style="opacity: 0;"></li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-sigma.svg" width="46" height="10" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item" style="opacity: 0;"></li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Денис Дзюбенко</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Managing Director SiGMA Group</li>
+                            <li class='allstars__inner-item'>20 лет трудов в&nbsp;сфере продаж</li>
+                            <li class='allstars__inner-item'>Некогда плакать, надо Ебашить!</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Прохавал гемблу с&nbsp;самого низа (начинал оператором службы
+                            поддержки)</li>
+                          <li class='allstars__inner-item'>С 2014 года собираю бейджи с&nbsp;iGaming конф</li>
+                          <li class='allstars__inner-item'>Основатель SiGMA Френдз Комьюнити</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/dzubenko_den" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-gusev.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-prchat.svg" width="56" height="56" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-rocket.svg" width="41" height="41" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-pr.svg" width="44" height="44" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Рома Гусев</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>15 лет в&nbsp;Digital-рынке</li>
+                            <li class='allstars__inner-item'>6 лет в&nbsp;роли СМО партнерок<br>на&nbsp;СРА-рынке</li>
+                            <li class='allstars__inner-item'>Собрал вместе 118&nbsp;маркетологов и&nbsp;пиарщиков
+                              из&nbsp;СРА</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Был СМО похоронного агентства</li>
+                          <li class='allstars__inner-item'>Автор методологии Гибкого ЗОЖа</li>
+                          <li class='allstars__inner-item'>Выжил после 100+ конференций и&nbsp;афтерпати</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/roma_gusevv" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a href="https://t.me/gusevroma" target="_blank">
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-tezenin.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-wapadvert.svg" width="37" height="37" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-aso.svg" width="36" height="22" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-mobileader.svg" width="33" height="36" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Андрей Тезенин</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>CEO &amp;&nbsp;Owner of&nbsp;Wapadvert.com</li>
+                            <li class='allstars__inner-item'>ASO Expert</li>
+                            <li class='allstars__inner-item'>Создал свой первый сайт в&nbsp;2006-ом</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Исполняет &rsquo;Фраера&rsquo; М. Круга на&nbsp;всех афф.пати
+                          </li>
+                          <li class='allstars__inner-item'>Посетил несчётное число&nbsp;IT конференций</li>
+                          <li class='allstars__inner-item'>Основатель Mobileader.ru</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/andrey_tezenin/" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-duzhnikov.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-brocard.svg" width="51" height="21" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-broconf.svg" width="51" height="38" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Александр Дужников</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item allstars__inner-item--tight'>В&nbsp;индустрии более 15&nbsp;лет, на&nbsp;рынке
+                              с&nbsp;2008 года</li>
+                            <li class='allstars__inner-item allstars__inner-item--tight'>Управляющий мега-платежки Brocard</li>
+                            <li class='allstars__inner-item allstars__inner-item--tight'>Российский бизнесмен вошедший в&nbsp;топ-8 &rsquo;Inc
+                              5000&prime;</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>Проект Move.ru был его дипломной работой</li>
+                          <li class='allstars__inner-item'>Организатор Broconf, единственной конфы в&nbsp;РФ</li>
+                          <li class='allstars__inner-item'>На&nbsp;фотках всегда со&nbsp;стаканом</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/sanek_duzhnikov/" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="allstars__cards-item">
+                <div class="allstars__main-container">
+                  <div class="allstars__card-container">
+                    <div class="allstars__front-card">
+                      <div class="allstars__inner-content">
+                        <div class="allstars__card-image">
+                          <img src="./img/allstars/allstars-legostaev.png" width="289" height="230" alt="">
+                        </div>
+                        <div class="allstars__card-icons">
+                          <ul class="allstars__icons__list list-reset">
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-goldclub.svg" width="44" height="29" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-webspace.svg" width="43" height="42" alt="">
+                              </div>
+                            </li>
+                            <li class="allstars__icons__item">
+                              <div class="allstars__circle-inner">
+                                <img src="./img/allstars/allstars-aso.svg" width="36" height="22" alt="">
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="allstars__front-image">
+                          <img src="./img/allstars/front-2.png" width="347" height="570" alt="">
+                        </div>
+                        <div class="allstars__card-info">
+                          <h3 class="allstars__name">Денис Легостаев</h3>
+                          <ul class="allstars__inner-list">
+                            <li class='allstars__inner-item'>Цифровой ветеран: зарабатывает в&nbsp;интернете с&nbsp;2008
+                            </li>
+                            <li class='allstars__inner-item'>Первая <s>любовь</s> ПП&nbsp;&mdash; funkit.ru</li>
+                            <li class='allstars__inner-item'>Co-founder of&nbsp;Webspace</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="allstars__back-card">
+                      <div class="allstars__inner-content">
+                        <ul class="allstars__inner-list">
+                          <li class='allstars__inner-item'>GOLD CLUB Owner</li>
+                          <li class='allstars__inner-item'>Прогорел на&nbsp;говорящих хомяках</li>
+                          <li class='allstars__inner-item'>Кормит аффов живыми тараканами</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="allstars__contacts-wrapper">
+                    <ul class="allstars__contacts-list list-reset">
+                      <li class="allstars__contacts-item active">
+                        <a href="https://www.instagram.com/legostaev_den" target="_blank">
+                          <img src="./img/svg/icon-ig.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                      <li class="allstars__contacts-item">
+                        <a>
+                          <img src="./img/svg/icon-tg.svg" width="40" height="40" alt="">
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <div class="accordion">
+              <button class="accordion__button">Форум</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item">
+                  <h3>
+                    <a class="accordion__item" href="index.html">Форум</a>
+                  </h3>
+                </li>
+                <li class="footer__item">
+                  <a class="accordion__item" href="vipblock.html">VIP Раздел</a>
+                </li>
+                <li class="footer__item">
+                  <a class="accordion__item" href="block.html">Раздел 1</a>
+                </li>
+                <li class="footer__item">
+                  <a class="accordion__item" href="#">Раздел 2</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Блог</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="blog.html">Блог</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Обзоры</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Кейсы</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Новости</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Тенденции</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Компании</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="catalog.html">Компании</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Дейтинг</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Адалт</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Нутра</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Гемблинг</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Курсы</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="courses.html">Курсы</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="courses-cards.html">Программирование</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Аффилейт</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Дизайн</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Маркетинг</a>
+                </li>
+              </ul>
+            </div>
+            <div class="accordion">
+              <button class="accordion__button">Мероприятия</button>
+              <ul class="footer__list list-reset accordion__body">
+                <li class="footer__item accordion__item">
+                  <h3>
+                    <a class="accordion__item" href="events.html">Мероприятия</a>
+                  </h3>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Конференции</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Митапы</a>
+                </li>
+                <li class="footer__item accordion__item">
+                  <a class="accordion__item" href="#">Афтерпати</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__socials">
+              <h3>Соцсети</h3>
+              <ul class="footer__socials-list list-reset">
+                <li class="footer__socials-item">
+                  <a href="https://t.me/cpaclubmain" target="_blank">
+                    <svg class="footer__socials-icon" width="15" height="15" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://www.instagram.com/cpa_club/" target="_blank">
+                    <svg class="footer__socials-icon" width="16" height="16" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://facebook.com/cpaclub1" target="_blank">
+                    <svg class="footer__socials-icon" width="15" height="20" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://linkedin.com/company/cpa-club" target="_blank">
+                    <svg class="footer__socials-icon" width="13" height="13" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__socials-item">
+                  <a href="https://www.youtube.com/channel/UCJlWqpH8laA0LPdUWpe8gMw" target="_blank">
+                    <svg class="footer__socials-icon" width="13" height="13" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <nav class="footer__nav-bottom">
+            <div class="footer__copyright">
+              <span>© CPA.CLUB 2013-2023</span>
+            </div>
+            <div class="footer__menu">
+              <a href="https://forum.cpa.club/sendmessage.php">Контакты администрации</a>
+              <a href="https://forum.cpa.club/archive/index.php">Архив</a>
+              <a href="team.html">О команде</a>
+              <a href="https://cpa.club/pages/terms-of-use-agreement">Пользовательское соглашение</a>
+              <a href="https://cpa.club/pages/privacy-policy">Политика конфиденциальности</a>
+              <a class="footer__up-btn" href="#">
+                <svg class="footer__up-btn-icon" width="10" height="10" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#up-btn"></use>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modals -->
+
+  <!-- MAIN POPUP -->
+
+  <div class="popup-overlay">
+    <div class="popup">
+      <div class="popup__content">
+        <button type="button" class="popup__close-btn" aria-label="Закрыть окно."></button>
+        <ul class="popup__content-list list-reset">
+          <li class="popup__content-item popup__content-item--signup" id="signup">
+            <div class="popup__content-inner">
+              <span class="popup__subtitle-mob">Есть аккаунт? Нажмите для </span>
+              <h2>Регистрация</h2>
+              <p>Добро пожаловать! Введите данные для регистрации</p>
+              <ul class="popup__reg-btn-list list-reset">
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--google">
+                    <svg class="popup__reg-btn-icon" width="18" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-google"></use>
+                    </svg>
+                    <span>Регистрация с Google</span>
+                  </a>
+                </li>
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--apple">
+                    <svg class="popup__reg-btn-icon" width="15" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-apple"></use>
+                    </svg>
+                    <span>Регистрация с Apple</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="popup__divider">
+                <b>или</b>
+              </div>
+              <form action="" method="post" id="signup-form">
+                <label for="signup-userlogin">
+                  <input type="text" name="signup-userlogin" id="signup-userlogin" placeholder="Логин" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="signup-email">
+                  <input type="email" name="signup-email" id="signup-email" placeholder="Email" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="signup-password">
+                  <input type="password" name="signup-password" id="signup-password" placeholder="Пароль" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <button type="submit" class="popup__submit-btn" form="signup-form">Создать личный аккаунт</button>
+                <button type="button" class="popup__switch-reg-btn open-popup" data-value="#comp-signup">Я представитель
+                  компании</button>
+              </form>
+              <button type="button" class="popup__login-btn open-popup login-btn" data-value="#login">
+                <span class="popup__login-btn-desk">Вход</span>
+                <span class="popup__login-btn-mob">Входa</span>
+              </button>
+            </div>
+            <div class="popup__image">
+              <img src="./img/popup-bg.png" srcset="./img/popup-bg@2x.png 2x" width="455" height="635" loading="lazy"
+                alt="">
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--signup" id="comp-signup">
+            <div class="popup__content-inner">
+              <span class="popup__subtitle-mob">Есть аккаунт? Нажмите для </span>
+              <h2>Регистрация</h2>
+              <p>Добро пожаловать! Введите данные для регистрации</p>
+              <ul class="popup__reg-btn-list list-reset">
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--google">
+                    <svg class="popup__reg-btn-icon" width="18" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-google"></use>
+                    </svg>
+                    <span>Регистрация с Google</span>
+                  </a>
+                </li>
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--apple">
+                    <svg class="popup__reg-btn-icon" width="15" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-apple"></use>
+                    </svg>
+                    <span>Регистрация с Apple</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="popup__divider">
+                <b>или</b>
+              </div>
+              <form action="" method="post" id="comp-signup-form">
+                <label for="comp-signup-userlogin">
+                  <input type="text" name="comp-signup-userlogin" id="comp-signup-userlogin" placeholder="Логин"
+                    required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="comp-signup-email">
+                  <input type="email" name="comp-signup-email" id="comp-signup-email" placeholder="Email" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="comp-signup-password">
+                  <input type="password" name="comp-signup-password" id="comp-signup-password" placeholder="Пароль"
+                    required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <button type="button" class="popup__submit-btn open-popup" data-value="#regcompany">Регистрация
+                  представителя</button>
+                <button type="button" class="popup__switch-reg-btn open-popup" data-value="#signup">Создать личный
+                  аккаунт</button>
+              </form>
+              <button type="button" class="popup__login-btn open-popup login-btn" data-value="#login">
+                <span class="popup__login-btn-desk">Вход</span>
+                <span class="popup__login-btn-mob">Входa</span>
+              </button>
+            </div>
+            <div class="popup__image">
+              <img src="./img/popup-bg.png" srcset="./img/popup-bg@2x.png 2x" width="455" height="635" loading="lazy"
+                alt="">
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--regcompany" id="regcompany">
+            <div class="popup__content-inner popup__content-inner--edit custom-edit-popup">
+              <h2>Создать учётную запись компании</h2>
+              <form action="" method="post" id="regcompany-form">
+                <label for="regcompany-name">
+                  <input type="text" name="regcompany-name" id="regcompany-name" placeholder="Наименование компании">
+                  <span class="error-message"></span>
+                </label>
+                <label for="regcompany-website">
+                  <input type="text" name="regcompany-website" id="regcompany-website" placeholder="Вебсайт компании">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="regcompany-email">
+                  <input type="email" name="regcompany-email" id="regcompany-email"
+                    placeholder="Корпоративная почта компании">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <div class="representative-block">
+                  <p>Стоимость добавлении компании 100$</p>
+                  <p>Представитель компании: <span>UserName</span></p>
+                </div>
+                <button type="submit" form="regcompany-form"
+                  class="custom-edit-popup__submit-btn regcompany-submit-btn">Отправить</button>
+              </form>
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--login" id="login">
+            <div class="popup__content-inner">
+              <h2>Вход</h2>
+              <p>Добро пожаловать! Введите данные для входа</p>
+              <ul class="popup__reg-btn-list list-reset">
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--google">
+                    <svg class="popup__reg-btn-icon" width="18" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-google"></use>
+                    </svg>
+                    <span>Вход с Google</span>
+                  </a>
+                </li>
+                <li class="popup__reg-btn-item">
+                  <a href="#" class="popup__reg-btn-link popup__reg-btn-link--apple">
+                    <svg class="popup__reg-btn-icon" width="15" height="18" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#reg-apple"></use>
+                    </svg>
+                    <span>Вход с Apple</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="popup__divider">
+                <b>или</b>
+              </div>
+              <form action="" method="post" id="login-form">
+                <label for="login-userlogin">
+                  <input type="text" name="login-userlogin" id="login-userlogin" placeholder="Логин" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="login-password">
+                  <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <div class="popup__checkbox-wrapper">
+                  <input class="visually-hidden" type="checkbox" name="remember" id="remember" checked>
+                  <label for="remember">Запомнить меня</label>
+                  <button type="button" class="popup__forgot-password-link open-popup pass-restore-btn"
+                    data-value="#pass-restore">Забыли
+                    пароль?</button>
+                </div>
+                <button type="submit" class="popup__submit-btn" form="login-form">Вход</button>
+                <div class="popup__signup-wrapper">
+                  <span>Нет аккаунта?</span>
+                  <button type="button" class="popup__signup-btn open-popup signup-btn"
+                    data-value="#signup">Регистрация</button>
+                </div>
+              </form>
+            </div>
+            <div class="popup__image">
+              <img src="./img/popup-bg.png" srcset="./img/popup-bg@2x.png 2x" width="455" height="635" loading="lazy"
+                alt="">
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--pass-restore" id="pass-restore">
+            <div class="popup__content-inner popup__content-inner--pass-restore pass-restore">
+              <div class="pass-restore__content">
+                <ul class="pass-restore__slides-list list-reset">
+                  <li class="pass-restore__slides-item active" id="reset-slide_1">
+                    <h3>Забыли пароль?</h3>
+                    <p>Не переживайте. Введите почту и мы отправим инструкции</p>
+                    <form id="pass-restore-email-form" action="" method="post">
+                      <label for="pass-restore-email">
+                        <input type="email" name="pass-restore-email" id="pass-restore-email" placeholder="Ваш E-mail"
+                          required>
+                        <span class="error-message">Текст сообщения</span>
+                      </label>
+                      <button type="submit" class="pass-restore__btn pass-restore__btn--email"
+                        data-value="#reset-slide_2" data-dot="#pag_2">
+                        <span>Сбросить пароль</span>
+                        <svg width="21" height="17" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </form>
+                    <button type="button"
+                      class="pass-restore__login-btn pass-restore__login-btn--exit open-popup login-btn"
+                      data-value="#login">←
+                      Назад</button>
+                  </li>
+                  <li class="pass-restore__slides-item" id="reset-slide_2">
+                    <h3>Сброс пароля</h3>
+                    <p>Отправили вам код на <span class="pass-restore__email">mail@mail.ru</span></p>
+                    <form id="pass-restore-code-form" action="" method="post">
+                      <div class="pass-restore__inputs pin">
+                        <input type="number" name="pass-restore-code_1" id="pass-restore-code_1" value="" autofocus>
+                        <input type="number" name="pass-restore-code_2" id="pass-restore-code_2" value="">
+                        <input type="number" name="pass-restore-code_3" id="pass-restore-code_3" value="">
+                        <input type="number" name="pass-restore-code_4" id="pass-restore-code_4" value="">
+                        <input type="number" name="pass-restore-code_5" id="pass-restore-code_5" value="">
+                        <input type="number" name="pass-restore-code_6" id="pass-restore-code_6" value="">
+                        <input type="hidden" name="pincode-result">
+                        <span class="error-message">Не подходит :( Попробуйте снова</span>
+                      </div>
+                      <button type="submit" class="pass-restore__btn pass-restore__btn--code"
+                        data-value="#reset-slide_3" data-dot="#pag_3">
+                        <span>Далее</span>
+                        <svg width="21" height="17" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </form>
+                    <div class="pass-restore__btn-wrapper">
+                      <span>Не пришел код?</span>
+                      <button type="button" class="pass-restore__btn pass-restore__btn--resend"
+                        data-value="#reset-slide_1" data-dot="#pag_1">Отправить еще раз</button>
+                    </div>
+                  </li>
+                  <li class="pass-restore__slides-item" id="reset-slide_3">
+                    <h3>Введите новый пароль</h3>
+                    <p>Не менее 8 знаков</p>
+                    <form id="pass-restore-pass-form" action="" method="post">
+                      <input type="text" name="pass-restore-pass" id="pass-restore-pass_1" placeholder="Введите пароль"
+                        pattern="[0-9a-zA-Z!@#$%^&*]{8,}" title="Не менее 8 знаков" required>
+                      <label for="pass-restore-pass_1">Ваш пароль
+                        <span class="error-message">Текст сообщения</span>
+                      </label>
+                      <input type="text" name="pass-restore-pass" id="pass-restore-pass_2" placeholder="Подтверждение"
+                        pattern="[0-9a-zA-Z!@#$%^&*]{8,}" title="Не менее 8 знаков" required>
+                      <label for="pass-restore-pass_2">Подтвердите пароль
+                        <span class="error-message">Текст сообщения</span>
+                      </label>
+                      <button type="submit" class="pass-restore__btn pass-restore__btn--pass"
+                        data-value="#reset-slide_4" data-dot="#pag_4">
+                        <span>Сбросить пароль</span>
+                        <svg width="21" height="17" fill="currentColor">
+                          <use xlink:href="./img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </button>
+                    </form>
+                    <button type="button" class="pass-restore__btn pass-restore__btn--return"
+                      data-value="#reset-slide_2" data-dot="#pag_2">←
+                      Назад</button>
+                  </li>
+                  <li class="pass-restore__slides-item" id="reset-slide_4">
+                    <h3>Готово!</h3>
+                    <p>Пароль сброшен</p>
+                    <button type="button"
+                      class="pass-restore__login-btn pass-restore__login-btn--completed open-popup login-btn"
+                      data-value="#login">Войти</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="pass-restore__pagination">
+                <ul class="pass-restore__pagination-list list-reset">
+                  <li class="pass-restore__pagination-item active" id="pag_1">
+                    <p>1</p>
+                  </li>
+                  <li class="pass-restore__pagination-item" id="pag_2">
+                    <p>2</p>
+                  </li>
+                  <li class="pass-restore__pagination-item" id="pag_3">
+                    <p>3</p>
+                  </li>
+                  <li class="pass-restore__pagination-item" id="pag_4">
+                    <p>4</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--admin" id="admin">
+            <div class="popup__content-inner popup__content-inner--admin admin-popup">
+              <h2>Закрытый контент</h2>
+              <p>Войдите или
+                <button type="button" class="admin-popup__signup-btn open-popup signup-btn" data-value="#signup">
+                  <span>зарегистрируйтесь</span>
+                </button>
+              </p>
+              <form action="" method="post" id="admin-login-form">
+                <label for="admin-userlogin">
+                  <input type="text" name="admin-userlogin" id="admin-userlogin" placeholder="Логин" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="admin-password">
+                  <input type="password" name="admin-password" id="admin-password" placeholder="Пароль" required>
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <button type="button" class="admin-popup__password-toggle-btn">Показать</button>
+                <button type="submit" form="admin-login-form" class="admin-popup__submit-btn">Войти</button>
+              </form>
+            </div>
+          </li>
+          <li class="popup__content-item popup__content-item--edit" id="edit">
+            <div class="popup__content-inner popup__content-inner--edit custom-edit-popup">
+              <h2>Редактирование</h2>
+              <form action="" method="post" id="custom-edit-form">
+                <label for="input_1">
+                  <input type="text" name="input_1" id="input_1" placeholder="Input label text">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="input_2">
+                  <input type="text" name="input_1" id="input_2" placeholder="Input label text">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="input_3">
+                  <input type="text" name="input_1" id="input_3" placeholder="Input label text">
+                  <span class="error-message">Заполните это поле</span>
+                </label>
+                <label for="input_4">
+                  <input class="invalid" type="text" name="input_1" id="input_4" placeholder="Input label text">
+                  <span class="error-message active">Заполните это поле</span>
+                </label>
+                <button type="submit" form="admin-login-form" class="custom-edit-popup__submit-btn">Сохранить</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- END MAIN POPUP -->
+
+  <!-- TEAM POPUP -->
+
+  <div class="team-popup-overlay">
+    <div class="team-popup">
+      <div class="team-popup__content">
+        <button type="button" class="team-popup__close-btn" data-close-popup aria-label="Закрыть окно.">
+          <svg width="44" height="44" fill="currentColor">
+            <use xlink:href="./img/sprite.svg#team-close"></use>
+          </svg>
+        </button>
+        <ul class="team-popup__content-list list-reset">
+          <li class="team-popup__content-item" id="team-1">
+            <div class="team-popup__image">
+              <img src=" ./img/team-dubovoy.jpg" alt="Михаил Дубовой">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Михаил Дубовой</h3>
+                  <p>Business Owner and Project Evangelist</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:m.dubovoy@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/mixxxail111" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Миша&nbsp;&mdash; душа и&nbsp;гордость нашей команды. Мы&nbsp;считаем, что он&nbsp;сможет привести
+                  клуб
+                  к&nbsp;новым вершинам. Под его руководством разработано новое видение современного клуба. Богатый
+                  профессиональный и&nbsp;житейский опыт помогут поддерживать атмосферу взаимопомощи
+                  и&nbsp;взаимоуважения. Михаил работает в&nbsp;сфере онлайн-манимейкинга с&nbsp;2010&nbsp;года,
+                  с&nbsp;2011 посещает ивенты по&nbsp;интернет-маркетингу. Имеет сильную экспертизу в&nbsp;SEO
+                  и&nbsp;мобильном медиабаинге.
+                  Монетизирует собственные вебсайты и&nbsp;приложения, также практикует рекламный арбитраж. Побеждал
+                  в&nbsp;крупных конкурсах партнёрских сетей. Основные вертикали: мобильные игры, мобильные подписки
+                  и&nbsp;iGaming. Резидент клуба с&nbsp;2017&nbsp;года. Обожает рыбалку, активный отдых и&nbsp;занятия
+                  спортом.</p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-2">
+            <div class="team-popup__image">
+              <img src=" ./img/team-divnic.jpg" alt="Alena Divnič">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Alena Divnič</h3>
+                  <p>Head of PR</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:a.divnich@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/adora_shandy" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/divnichalena/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Более 5&nbsp;лет Алена занимается маркетингом и&nbsp;пиаром проектов по&nbsp;партнёрскому
+                  и&nbsp;CPA-маркетингу. Знает &laquo;всю кухню&raquo; пиара в&nbsp;нашей индустрии как со&nbsp;стороны
+                  партнёрских сетей, так и&nbsp;со&nbsp;стороны сервисов и&nbsp;медиа. Может буквально пропушить
+                  на&nbsp;нашем рынке что угодно... кроме себя собой. Алена обожает&nbsp;F1, лично посещает Гран При
+                  гонки во&nbsp;время сезона, любит кулинарию и&nbsp;странноватые приколы. Однажды на&nbsp;спор набила
+                  татуировку в&nbsp;виде логотипа одной из&nbsp;ПП. У&nbsp;Алены есть уникальное видение продвижения
+                  нового Клуба, и&nbsp;она намерена воплотить все свои амбициозные проекты, чтобы вернуть
+                  и&nbsp;закрепить авторитет CPA.Club.</p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-3">
+            <div class="team-popup__image">
+              <img src=" ./img/team-belyaeva.jpg" alt="Катерина Беляева">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Катерина Беляева</h3>
+                  <p>Content Lead and Author of materials</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:e.beliaeva@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/katerinabeli" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/katerina-beliaeva/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Вот уже 3&nbsp;года Катерина занимается всевозможным контент-мейкингом для проектов
+                  в&nbsp;CPA-индустрии. Она сотрудничала, как автор, редактор и&nbsp;копирайтер со&nbsp;многими
+                  проектами в&nbsp;нише, успела поработать контент-лидом в&nbsp;партнёрской сети LeadRock,
+                  а&nbsp;сегодня возглавляет контентное направление в&nbsp;новом CPA.Club. Каждая статья, заметка
+                  и&nbsp;сценарий появляются в&nbsp;Клубе при её&nbsp;участии и&nbsp;с&nbsp;её&nbsp;одобрения. Именно
+                  она помогает превращать все тексты на&nbsp;нашем ресурсе в&nbsp;публицистические шедевры. Кроме того,
+                  Катерина самостоятельно ведёт несколько рубрик, участвует в&nbsp;модерировании форума и&nbsp;бдит
+                  за&nbsp;тем, чтобы общение в&nbsp;Клубе оставалось профессиональным. Катерина любит читать,
+                  фотографировать, гулять по&nbsp;неизвестным местам городов и&nbsp;раскрашивать картины
+                  по&nbsp;номерам. Чтобы новый CPA.Club стал достойным проектом, на&nbsp;который ориентируется вся
+                  индустрия, Катерина вместе с&nbsp;командой приложат максимум усилий в&nbsp;работе с&nbsp;контентом.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-4">
+            <div class="team-popup__image">
+              <img src=" ./img/team-kurdyukova.jpg" alt="Мария Курдюкова">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Мария Курдюкова</h3>
+                  <p>SMM and Content Manager</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:m.kurdiukova@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/masharyba" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/мария-курдюкова-290805249/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Мария&nbsp;&mdash; главный рупор CPA.Club по&nbsp;всем медиа направлениям. С&nbsp;многолетним опытом
+                  в&nbsp;контентном маркетинге для CPA-проектов, Маша, наш ведущий Social Media специалист, ведёт все
+                  соцсети Клуба, размещает анонсы, тизеры, объявления, отзывы, комментарии и&nbsp;ремарки CPA.Club.
+                  Кроме того, сама ведёт несколько контентных рубрик и&nbsp;проверяет все материалы, которые размещаются
+                  в&nbsp;публичном блоге. Мария любит онлайн-игры, интересуется геймдевом и&nbsp;индустрией игр, обожает
+                  стримы и&nbsp;активно играет сама. Иногда работает стилистом-визажистом на&nbsp;видеосъемках. CPA.Club
+                  для Маши&nbsp;&mdash; проект
+                  с&nbsp;богатой и&nbsp;насыщенной историей, собственной культурой и&nbsp;ценностями. Чтобы Клуб заиграл
+                  новыми красками, контент-команда приложит максимум усилий и&nbsp;возродит авторитет CPA.Club.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-5">
+            <div class="team-popup__image">
+              <img src=" ./img/team-kolomiichenko.png" alt="Андрей Коломийченко">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Андрей Коломийченко</h3>
+                  <p>Head of Dev</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:a.kolomiichenko@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/andrii-pro/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Разработкой платформы и&nbsp;интеграцией медиа площадок CPA.Club занимается Андрей.
+                  Он&nbsp;не&nbsp;понаслышке знаком с&nbsp;партнёрскими программами: вот уже 12+&nbsp;лет Андрей
+                  профессионально занимается разработкой сервисов партнёрских сетей, агрегаторов трафика
+                  и&nbsp;высоконагруженных систем таргетинга и&nbsp;CRM-систем для рекламодателей. Также имеет
+                  внушительный опыт в&nbsp;создании скриптов клоакинга, автозалива и&nbsp;генераторов креативов. Андрей
+                  умеет, пожалуй, всё, что технари придумали в&nbsp;рекламном арбитраже за&nbsp;всё время его
+                  существования. Понимая все технические потребности CPA-платформ, наш Head of&nbsp;Dev как&nbsp;никто
+                  знает,
+                  что именно нужно для развития нового Клуба. Андрей увлекается решением нестандартных IT-задач,
+                  участвует во&nbsp;всевозможных хакатонах для IT-проектов и&nbsp;занимается мотоджимханой
+                  (экстремальный мотоспорт с&nbsp;препятствиями).
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-6">
+            <div class="team-popup__image">
+              <img src=" ./img/team-sargsyan.jpg" alt="Гурген Саргсян">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Гурген Саргсян</h3>
+                  <p>Head of Sales</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:g.sargsyan@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/GurgenSar" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/gurgen-sargsyan-expert/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Деловая деятельность CPA.Club невозможна без монетизации и&nbsp;подключения к&nbsp;платформе сервисов
+                  и&nbsp;компаний. Интеграцией CPA-бизнесов со&nbsp;всего мира занимается Гурген&nbsp;&mdash;
+                  он&nbsp;наш главный продажник и&nbsp;первая точка входа в&nbsp;Клуб для коммерческих размещений.
+                  В&nbsp;сфере B2B продаж уже более 15&nbsp;лет. Гурген курирует раздел каталога и&nbsp;отзывов,
+                  заведует всей рекламой на&nbsp;проекте и&nbsp;подключает новых партнёров к&nbsp;Клубу. Исключительно
+                  общителен и&nbsp;любознателен: обожает заводить друзей, осваивать профессии, прокачивать скиллы
+                  и&nbsp;вообще всё новое. Поддержание престижного статуса CPA.Club&nbsp;&mdash; важная задача для
+                  Гургена, он&nbsp;приложит все силы, чтобы Клуб был самым честным сообществом на&nbsp;нашем рынке.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-7">
+            <div class="team-popup__image">
+              <img src=" ./img/team-borisov.jpg" alt="Роман Борисов">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Роман Борисов</h3>
+                  <p>UA Manager and Media buyer</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:r.borisov@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/roman-borisov-goat/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Контент Клуба создаёт его репутацию, а&nbsp;репутация Клуба говорит сама за&nbsp;себя. Тем
+                  не&nbsp;менее, амбиции CPA.Club едва&nbsp;ли возможно реализовать без рекламы. Всей платной рекламой
+                  проекта, баннерами, объявлениями, контекстом и&nbsp;ретаргетингом занимается Роман. Когда
+                  вы&nbsp;видите нашу рекламу из&nbsp;каждого чайника&nbsp;&mdash; вы&nbsp;так или иначе сталкиваетесь
+                  с&nbsp;его работой. Рома занимается рекламным арбитражем с&nbsp;2016&nbsp;года, а&nbsp;непосредственно
+                  медиабаингом для IT-брендов уже почти 6&nbsp;лет. Работал с&nbsp;такими тяжеловесными вертикалями как
+                  недвижимость, банковская сфера, VR/AR продукты. В&nbsp;общей сложности делал медиабаинг для
+                  110+&nbsp;брендов. Роман любит футбол и&nbsp;баскетбол: не&nbsp;просто болеет, но&nbsp;сам играет всю
+                  жизнь. Роман ответственно разделяет ценности клуба и&nbsp;старается сделать так, чтобы аффилиаты
+                  со&nbsp;всего мира получили возможность приобщиться к&nbsp;нашему опыту и&nbsp;накопленным знаниям.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-8">
+            <div class="team-popup__image">
+              <img src=" ./img/team-minaichev.jpg" alt="Владислав Минайчев">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Владислав Минайчев</h3>
+                  <p>Head of Design</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:v.minaichev@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/minai4ev" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Главная ценность клуба&nbsp;&mdash; его сообщество, а&nbsp;главное оружие&nbsp;&mdash; контент
+                  и&nbsp;накопленные знания.
+                  Но&nbsp;даже лучший контент не&nbsp;всегда найдёт читателя без яркой упаковки. Оформлением
+                  и&nbsp;дизайном всех продуктов CPA.Club занимается Владислав. Лендинги, интерфейсы, презентации,
+                  кнопки, обложки и&nbsp;баннеры&nbsp;&mdash; всё это делает Влад, как штатный мультидисциплинарный
+                  дизайнер проекта. Влад фанат культуры стрит-арта, любит поездки на&nbsp;велосипеде. Клуб для
+                  Влада&nbsp;&mdash; проект, где можно создавать безудержно много промо материалов. Он&nbsp;рад, что
+                  CPA.Club не&nbsp;даёт заскучать и&nbsp;всегда подкидывает новые интересные задания.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-9">
+            <div class="team-popup__image">
+              <img src=" ./img/team-krylova.jpg" alt="Кира Крылова">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Кира Крылова</h3>
+                  <p>HR Business Partner</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:k.krylova@pin-up.business" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/kira-krylova/" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-linked"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Оплот нашей безопасности, комфорта и&nbsp;ментального здоровья&nbsp;&mdash; это Кира.
+                  Не&nbsp;занимается напрямую организацией работы Клуба, но&nbsp;занимается теми, кто занимается
+                  Клубом:) У&nbsp;Киры 10&nbsp;лет опыта по&nbsp;HR в&nbsp;IT-бизнесах всех мастей и&nbsp;размеров.
+                  Перепробовав все существующие направления: от&nbsp;кадровика до&nbsp;HR&nbsp;Lead&rsquo;а, Кира точно
+                  знает, что нужно команде для поддержания эффективности, защиты от&nbsp;выгорания и&nbsp;эмоциональной
+                  стабильности. Пока мы&nbsp;заботимся о&nbsp;CPA.Club, Кира заботится о&nbsp;нас. Если хотите попасть
+                  в&nbsp;команду Клуба и&nbsp;помочь нам сделать партнёрский маркетинг лучше&nbsp;&mdash; смело пишите
+                  по&nbsp;контактам Киры.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-10">
+            <div class="team-popup__image">
+              <img src=" ./img/team-makarenko.jpg" alt="Дарина Макаренко">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Дарина Макаренко</h3>
+                  <p>Head of Event</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:d.makarenko@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/darcymak" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>У&nbsp;многих ветеранов рынка, CPA.Club крепко ассоциируется с&nbsp;тёплыми ламповыми встречами.
+                  Митапы Клуба чуть&nbsp;ли не&nbsp;с&nbsp;самого его основания были важной его частью: собирали
+                  участников вместе, объединяли&nbsp;их, и&nbsp;укрепляли партнёрские связи между ТОПами рынка.
+                  Мы&nbsp;очень хотим поддерживать эту культуру. Все ивенты в&nbsp;рамках Клуба курирует Дарина. Имея
+                  за&nbsp;плечами 10&nbsp;лет опыта организации всевозможных коммерческих и&nbsp;корпоративных
+                  мероприятий, Дарина точно знает, какими должны быть митапы авторитетного Клуба CPA-предпринимателей.
+                  Митапы, церемонии награждения, приватные препати перед нишевыми конференциями, совместный отдых
+                  резидентов Клуба&nbsp;&mdash; всё это делает ивент-команда под чутким руководством Дарины. Она
+                  поддерживает и&nbsp;разделяет идеологию и&nbsp;философию проекта: объединить профессионалов
+                  со&nbsp;всего мира и&nbsp;дать им&nbsp;возможность устанавливать эффективные партнёрские связи.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-11">
+            <div class="team-popup__image">
+              <img src=" ./img/team-krawtchenko.png" alt="Артём">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Артём Кравченко</h3>
+                  <p>Editor in Chief</p>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="mailto:a.krauchanka@origincreatives.com" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-email"></use>
+                    </svg>
+                  </a>
+                  <a href="https://t.me/Mighty_M" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Артём с&nbsp;2014 года работает в&nbsp;affiliate-индустрии и&nbsp;является одним из&nbsp;самых
+                  знаменитых лидеров мнений в&nbsp;сфере. Многие знают его под псевдонимом Проксимальный Паук.
+                  В&nbsp;данный момент Артём занимает должность главного редактора CPA.Club, осуществляя контроль
+                  за&nbsp;каждым публикуемым символом от&nbsp;имени Клуба. Он&nbsp;активно участвует в&nbsp;развитии
+                  проекта, выполняет обязанности комьюнити-лида, обеспечивая качественный онбординг для новых
+                  участников. Также Артём работает над созданием комфортных условий для общения и&nbsp;поддержанием
+                  репутации Клуба в&nbsp;индустрии. Кроме того, активно управляет форумом и&nbsp;обладает навыками
+                  работы с&nbsp;движками XenForo и&nbsp;vBulletin.<br>
+                  Важно отметить, что Артём является бывшим участником CPA.Club, и&nbsp;его преданность сообществу
+                  позволяет ему стремиться к&nbsp;тому, чтобы Клуб стал оплотом профессионализма во&nbsp;всей индустрии
+                  партнерского маркетинга. Артём уверен, что CPA.Club, как одно из&nbsp;старейших русскоговорящих
+                  affiliate-сообществ, имеет потенциал формировать и&nbsp;влиять на&nbsp;общественное мнение
+                  арбитражников, способствуя установлению честных и&nbsp;профессиональных стандартов в&nbsp;этой сфере.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="team-popup__content-item" id="team-12">
+            <div class="team-popup__image team-popup__image--kesha">
+              <img src=" ./img/team-kesha.png" alt="Робот Кеша">
+              <div class="team__logo-icon">
+                <svg width="39" height="23" fill="currentColor">
+                  <use xlink:href="./img/sprite.svg#team-logo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="team-popup__info">
+              <div class="team-popup__heading">
+                <div class="team-popup__personal">
+                  <h3>Робот Кеша</h3>
+                </div>
+                <div class="team-popup__contacts team__contacts">
+                  <a href="https://t.me/clubgate" target="_blank">
+                    <svg width="26" height="26" fill="currentColor">
+                      <use xlink:href="./img/sprite.svg#team-tg"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="team-popup__description">
+                <p>Нет такого участника &laquo;старого&raquo; Клуба, который не&nbsp;знал&nbsp;бы Кешу
+                  и&nbsp;не&nbsp;испытывал к&nbsp;нему особого отношения. Кеша неотделим от&nbsp;CPA.Club, как&nbsp;бы
+                  многие не&nbsp;хотели отключить этого зловредного бота. Долгие годы робот следил за&nbsp;дисциплиной
+                  и&nbsp;активностью пользователей, исправно напоминая резидентам, что неучастие и&nbsp;безразличие
+                  не&nbsp;идут на&nbsp;пользу закрытому сообществу. Кеша и&nbsp;впредь продолжит наблюдать
+                  за&nbsp;комьюнити. Нет, он&nbsp;больше не&nbsp;угрожает заморозкой аккаунта за&nbsp;неактивность,
+                  но&nbsp;выдаёт статусы и&nbsp;достижения, начисляет репутацию и&nbsp;проверяет голосования
+                  на&nbsp;накрутки, а&nbsp;нарушителям объявляет санкции в&nbsp;виде мьютов и&nbsp;ограничений.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button type="button" class="team-popup__close-btn-mob" data-close-popup>Закрыть</button>
+  </div>
+
+  <!-- END TEAM POPUP -->
+
+  <!-- COOKIES POPUP -->
+
+  <div class="cookies-popup custom-popup" id="cookies-popup"> <!--add class "active" to show the popup-->
+    <div class="cookies-popup__content">
+      <h3>Уведомление</h3>
+      <p>Этот сайт использует файлы cookies
+        и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для обеспечения
+        работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически
+        соглашаетесь с использованием данных технологий.</p>
+      <button type="button" class="cookies-popup__submit-btn" data-close-btn>Принять</button>
+    </div>
+  </div>
+
+  <!-- END COOKIES POPUP -->
+
+  <!-- ADVERTISE POPUP -->
+
+  <div class="advert-popup custom-popup" id="advert-popup"> <!--add class "active" to show the popup-->
+    <button type="button" class="advert-popup__close-btn" data-close-btn aria-label="Закрыть"></button>
+    <div class="advert-popup__content">
+      <div class="advert-popup__image">
+        <img src="./img/advert-image.png" srcset="./img/advert-image@2x.png 2x" width="314" height="145" loading="lazy"
+          alt="">
+      </div>
+      <div class="advert-popup__info">
+        <p>Рекламное сообщение. Две строки. До 50 символов</p>
+        <a href="#" class="advert-popup__link">Перейти</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- END ADVERTISE POPUP -->
+
+  <!-- ALERT POPUP -->
+
+  <div class="alert-popup custom-popup" id="alert-popup"> <!--add class "active" to show the popup-->
+    <button type="button" class="alert-popup__close-btn" data-close-btn></button>
+    <div class="alert-popup__content alert-popup__content--error">
+      <p>Wrong password!</p>
+    </div>
+    <!-- <div class="alert-popup__content alert-popup__content--success">
+      <p>Success!</p>
+    </div> -->
+  </div>
+
+  <!-- END ALERT POPUP -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
